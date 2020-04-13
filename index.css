@@ -703,29 +703,25 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#std-form5 .nxt-btn .nxtbtn {
+#std-form5 .q5 .std-submit {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#std-form5 .q5 .std-submit input {
     border: none;
-    text-align: center;
-    font-style: 4rem;
-    /* height: 100px; */
-    background: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-#std-form5 .nxt-btn .nxtbtn i {
-    padding: 5px;
-    border: none;
-    background-color: white;   
-}
-
-#std-form5 .nxt-btn .nxtbtn-1 {
-    position: relative;
-    left: 39.4rem;
-    top: -186px;
-}
-
-#std-form5 .nxt-btn .nxtbtn:hover {
+#std-form5 .q5 .std-submit input:hover {
     cursor: pointer;
-    /* border: 1px solid blue; */
 }
 
 #std-form5 .prv-btn .prvbtn {
@@ -751,4 +747,38 @@
 #std-form5 .prv-btn .prvbtn:hover {
     cursor: pointer;
     /* border: 1px solid blue; */
+}
+
+/* student form end */
+
+#std-end .end {
+    margin-top: 200px;
+}
+
+#std-end .end .h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-family:'Roboto', Helvetica;    
+}
+
+#std-end .end .h1 h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#std-end .end .h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family:'Roboto', Helvetica;
+}
+
+#std-end .end .h2 h2 {
+    font-size: 3rem;
+    text-transform: lowercase;
+    font-style: italic;
+    margin-top: 20px;
 }
