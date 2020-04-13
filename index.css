@@ -1,0 +1,442 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* utility classes */
+.h1-font-size {
+    font-size: 2rem;
+}
+
+.box {
+    width: 80%;
+    margin: 2rem auto;
+    /* border: 1px solid black; */
+}
+
+.border-box {
+    border: 4px solid black;
+    /* width: 80%; */
+    max-width: 700px;   
+    margin: auto;
+    border-radius: 10%;
+    background: white;
+}
+
+/* mainStudent */
+
+#std-login {
+    background: #9B9797;
+}
+
+#std-login-section {
+    margin-top: 11.2rem;
+}
+
+#std-login-section #heading h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+#std-login-section #codeBox #std-form-input {
+    /* margin: auto; */
+    /* margin-left: 550px; */
+    display: flex;
+    justify-content: center;
+}
+
+#std-login-section #codeBox {
+    margin-top: 2rem;
+}
+
+#std-login-section #codeBox #std-form-input #std-code-box {
+    padding: 10px 67px;
+    text-align: center;
+}
+
+#std-login-section #codeBox #std-form-enter {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+#std-login-section #codeBox #std-form-enter #std-code-enter {
+    padding: 7px 129px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+#std-login-section #codeBox #std-form-enter #std-code-enter:hover {
+    cursor: pointer;
+    background: #363834;
+}
+
+#std-login-section #codeBox #std-form-enter #std-code-enter:visited {
+    color: none;
+    text-decoration: none;
+}
+
+/* student form 1*/
+
+#std-form {
+    background-color: #8a8a8e;
+}
+
+#std-form .border-box {
+    background-color: white;
+}
+
+#std-form .q1 {
+    margin-top: 4rem;
+}
+
+#std-form .heading {
+    padding-top: 20px;
+}
+
+#std-form .heading .progress {
+    font-family: Helvetica, Arial, sans-serif;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 20%;
+    position: relative;
+    left: 47%;
+    padding: 10px;
+}
+
+#std-form .q1 .label-1 {
+    display: flex;
+    justify-content: center;
+}
+
+#std-form .q1 .label-1 label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#std-form .q1 .stars {
+    width: 270px;
+    display: block;
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 13rem;
+}
+
+#std-form .q1 input.star { display: none; }
+
+#std-form .q1 label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+}
+
+#std-form .q1 input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+}
+
+#std-form .q1 input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+#std-form .q1 input.star-1:checked ~ label.star:before { color: #F62; }
+
+#std-form .q1 label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+#std-form .q1 label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+#std-form .nxt-btn {
+    /* border: 1px solid black;  */
+    margin-top: 200px;
+}
+
+#std-form .nxt-btn .nxtbtn {
+    border: none;
+    text-align: center;
+    font-style: 4rem;
+    /* height: 100px; */
+    background: white;
+}
+
+#std-form .nxt-btn .nxtbtn i {
+    padding: 5px;
+    border: none;
+    background-color: white;   
+}
+
+#std-form .nxt-btn .nxtbtn-1 {
+    position: relative;
+    left: 90%;
+    top: -190px;
+}
+
+#std-form .nxt-btn .nxtbtn:hover {
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
+
+/* student form 2 */
+
+#std-form2 {
+    background-color: #8a8a8e;
+}
+
+#std-form2 .light .heading {
+    padding-top: 20px;
+}
+
+#std-form2 .light .heading .progress {
+    font-family: Helvetica, Arial, sans-serif;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 20%;
+    position: relative;
+    left: 44%;
+    padding: 10px;
+    text-align: center;
+}
+
+#std-form2 .light .label-2 {
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#std-form2 .light .label-2 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#std-form2 section {
+    width: 50%;
+    min-height: inherit;
+    
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+  
+    position: relative;
+    /* margin-left: 10px; */
+    margin-left: 25%;
+    background-color: white;
+  }
+  
+  #std-form2 section::before,
+  #std-form2 section::after {
+    content: "";
+    display: block;
+  
+    border-radius: 100%;
+  
+    position: absolute;
+}
+  
+/* #std-form2 section::before {
+    width: 30px;
+    height: 30px;
+  
+    background: var(--primary);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  
+    top: 18px;
+    left: 18px;
+} */
+  
+/* #std-form2 section::after {
+    width: 42px;
+    height: 42px;
+  
+    border: 1px solid var(--primary);
+  
+    top: 11px;
+    left: 11px;
+} */
+  
+#std-form2 .light {
+    --primary: hsl(250, 100%, 44%);
+    --other: hsl(0, 0%, 14%);
+    /* padding-bottom: 113px; */
+    /* background: hsl(0, 0%, 98%); */
+}
+
+#std-form2 label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 12px 0;
+    cursor: pointer;
+    position: relative;
+    /* height: auto; */
+    /* padding-left: 5px; */
+    position: relative;
+    left: 35%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#std-form2 label textarea {
+    border: none;
+    border-bottom: 1.5px solid black;
+    margin-left: 10px;
+}
+  
+  /* input */
+#std-form2 input {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+  
+  
+  /* .design */
+#std-form2 .design {
+    width: 16px;
+    height: 16px;
+  
+    border: 1px solid var(--other);
+    border-radius: 100%;
+    margin-right: 16px;
+  
+    position: relative;
+}
+  
+#std-form2 .design::before,
+#std-form2 .design::after {
+    content: "";
+    display: block;
+  
+    width: inherit;
+    height: inherit;
+  
+    border-radius: inherit;
+  
+    position: absolute;
+    transform: scale(0);
+    transform-origin: center center;
+}
+  
+#std-form2 .design:before {
+    background: var(--other);
+    opacity: 0;
+    transition: .3s;
+}
+  
+#std-form2 .design::after {
+    /* background: var(--primary); */
+    opacity: .4;
+    transition: .6s;
+}
+  
+  
+ /* .text */
+#std-form2 .text {
+    color: var(--other);
+    font-weight: bold;
+    /* text-align: center; */
+}
+  
+  
+  /* checked state */
+#std-form2 input:checked+.design::before {
+    opacity: 1;
+    transform: scale(.6);
+    position: relative;
+    right: 1px;
+    bottom: 1px;
+}
+
+  
+/* other states */
+#std-form2 input:hover+.design,
+#std-form2 input:focus+.design {
+    border: 1px solid var(--primary);
+}
+  
+#std-form2 input:hover+.design:before,
+#std-form2 input:focus+.design:before {
+    background: var(--primary);
+}
+  
+#std-form2 input:hover~.text {
+    color: var(--primary);
+}
+  
+#std-form2 input:focus+.design::after,
+#std-form2 input:active+.design::after {
+    opacity: .1;
+    transform: scale(2.6);
+}
+
+/* #std-form2 .light .nxt-btn {
+    /* border: 1px solid black;  */
+    /* margin-top: 200px; 
+} */
+
+#std-form2 .light .nxt-btn .nxtbtn {
+    border: none;
+    text-align: center;
+    font-style: 4rem;
+    /* height: 100px; */
+    background: white;
+}
+
+#std-form2 .light .nxt-btn .nxtbtn i {
+    padding: 5px;
+    border: none;
+    background-color: white;   
+}
+
+#std-form2 .light .nxt-btn .nxtbtn-1 {
+    position: relative;
+    left: 28rem;
+    top: -190px;
+}
+
+#std-form2 .light .nxt-btn .nxtbtn:hover {
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
+
+#std-form2 .light .prv-btn .prvbtn {
+    border: none;
+    text-align: center;
+    font-style: 4rem;
+    /* height: 100px; */
+    background: white;
+}
+
+#std-form2 .light .prv-btn .btn i {
+    padding: 5px;
+    border: none;
+    background-color: white;   
+}
+
+#std-form2 .light .prv-btn .prvbtn-1 {
+    position: relative;
+    right: 9.5rem;
+    top: -233px;
+}
+
+#std-form2 .light .prv-btn .prvbtn:hover {
+    cursor: pointer;
+    /* border: 1px solid blue; */
+}
