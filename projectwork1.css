@@ -1,0 +1,535 @@
+* {box-sizing: border-box}
+body {
+    margin:0;
+    background-color:#eee;
+}
+/*@font-face {
+    font-family: 'comic sans';
+    src:url('fonts/font_comic sans.ttf');
+}*/
+header {
+    background: black;
+    color: white;
+    padding: 8px 0px 6px 40px;
+    height: 150px;
+    
+
+}
+
+#male {
+    padding:10px;
+    margin:0 auto;
+}
+
+#logo {
+    display: inline-block;
+    font-family:courgette;
+    font-weight: 400;
+    font-size: 15px;
+    height:100%;
+    line-height:45px;
+    margin-right:0px;
+}
+
+
+
+#logintitle {
+    font-size: 100px;
+    text-align: center;
+}
+
+#navbar {
+    font-family: calibri;
+    float:left;
+}
+
+.home {
+    background-color: red;
+    padding: 30px 10px 16px 10px;
+}
+ .input-select {
+  color: black;
+ }
+
+
+.links {
+    display:inline;
+    height:100%;
+    padding: 0 15px;
+    line-height: 45px;
+    text-decoration: none;
+    color:#E1E2E3;
+    font-size: 20px;
+}
+.bordered {
+    /*background-color: red;*/
+    padding: 15px;
+    border:1px solid #2e2a4c;
+}
+
+
+
+.links:hover {
+    color:#48c4c4;
+    /*padding: 30px 10px 16px 10px;*/
+}
+#searchbar {
+    vertical-align: middle;
+    font-family:arial;
+    color: black;
+    padding:6px;
+    margin-top:-100px;
+    height:40px;
+    width:300px;
+    margin-left: 1000px;
+}
+
+#socialimages{
+    float: right;
+    padding-right: 5px;
+    padding-top: 0.1px;
+    display:block;
+    vertical-align: middle;
+    line-height: 45px;
+    margin-top:7px;
+}
+
+#button{
+    vertical-align: middle;
+    padding:6px;
+    margin-top:-100px;
+    margin-left:1300px;
+    height:40px;
+    color:black;
+    background-color:teal;
+    border:solid teal;
+    cursor:pointer;
+    width:100px;
+}
+ html, body{
+    width:100%;
+    height:100%;
+    font-family: calibri;
+    color: #444;
+   
+
+ }
+
+ #container{
+    position:fixed;
+    width:340px;
+    height:280px;
+    top:50%;
+    left:50%;
+    margin-top:-140px;
+    margin-left:-170px; 
+    background-color:white;
+    border-radius:15px;
+
+ }
+ #account {
+    text-align: center;
+    margin-top:10px;
+    text-decoration-style: bold;
+ }
+ #reg {
+    text-align: center;
+    margin-top:10px;
+    text-decoration-style: bold;
+ }
+ #account:hover{
+    text-decoration: underline;
+    color:;
+ }
+
+ form{
+    margin: 0 auto;
+    margin-top:20px;
+
+ }
+
+
+/*input[type=text],
+input[type=password] {
+    color: #777;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 18px;
+    width: 290px;
+    height: 35px;
+}*/
+#lower {
+    width: 100%;
+    height: 69px;
+    margin-top: 20px;
+}
+/*input[type=checkbox] {
+    margin-left: 20px;
+    margin-top: 30px;
+    float:middle;
+
+}*/
+.check {
+    margin-left: 3px;
+    /*float:middle;*/
+}
+/*input[type=submit] {
+    float: middle;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #d6204d;
+    border-radius: 7px;
+    border: 1px solid #d6204d;
+    cursor: pointer;
+    vertical-align: middle;
+    display: block;
+    text-align:center;
+    margin-left:5px;
+    margin-right: -0px;
+    margin-top: -55px;
+
+}*/
+#cont {
+    width:350px;
+    height:425px;
+    margin:0 auto;
+    margin-top: 200px;
+    vertical-align: middle;
+    background-color: white; 
+    position: relative;
+
+}
+#join {
+    margin-top:100px;
+    width: 100%;
+}
+#email {
+    position: relative;
+}
+
+* {
+    /*border:1px solid green;*/
+}
+.flex {
+    
+    height:50px;
+    font-size: 14px;
+    background-color: black;
+    margin-top: -5px;
+    
+}
+
+
+/*.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 120px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+    margin-top : 50px;
+    font-family: arial;
+/*}*/
+
+.mainarea {
+    width: 1600px;
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 60px;
+    overflow-x: hidden;
+    margin-top : 50px;
+    font-family: arial;
+    color: blue;
+    padding-left: 2px;
+   
+    
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: orange;
+}
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+.abt {
+    margin-left: -17px;
+}
+.social {
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#mens {
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    font-family:calibri;
+    font-size: 30px;
+    position: absolute;
+    top : 20px;
+    left: 200px;
+
+}
+.rect {
+    height: 110px;
+    width: 1200px;
+    color: black;
+    background-color: grey;
+    margin-top: 70px;
+    margin-left: 170px;
+    text-align: center;
+    font-size: 40px;
+    vertical-align: middle;
+
+}
+.menprod {
+    height : 250px;
+    width : 200px;
+    margin-left : 300px;
+    text-align: center;
+    margin-top : 60px;
+    background-image:url('hoodie.jpeg');
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:400;
+    left:210;
+
+}
+.menprod2 {
+    height : 250px;
+    width : 200px;
+    margin-left : 500px;
+    text-align: center;
+    margin-top : 60px;
+    background-image:url('hoodie.jpeg');
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:400;
+    left:460;
+
+}
+.menprod3 {
+    height : 250px;
+    width : 200px;
+    margin-left : 500px;
+    text-align: center;
+    margin-top : 60px;
+    background-image:url('hoodie.jpeg');
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:400;
+    left:710;
+
+}
+.menprod4 {
+    height : 250px;
+    width : 200px;
+    margin-left : 500px;
+    text-align: center;
+    margin-top : 60px;
+    background-image:url('hoodie.jpeg');
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:400;
+    left:960;
+
+}
+.menprod5 {
+    height : 250px;
+    width : 200px;
+    margin-left : 500px;
+    text-align: center;
+    margin-top : 60px;
+    background-image:url('hoodie.jpeg');
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:400;
+    left:1211;
+
+}
+.table {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 20px;
+    /*margin-top: -100px;*/
+
+}
+
+#td1 {
+    float:left;
+    margin-left: 20px;
+    color:red;
+
+}
+#td2 {
+    float:middle;
+}
+#td3 {
+    float: right;
+}
+
+#acct {
+    margin-top: -150px;
+    margin-left: 1450px;
+    text-decoration: none;
+    padding: 2px;
+    text-align: left;
+    color: red;
+
+}
+#cart {
+    margin-top: -20px;
+    margin-left: 1540px;
+}
+#bkt {
+    color:white;
+}
+#boxunder {
+    background-color:#d2d5db;
+    height: 100%;
+    border: 0.1px solid black;
+}
+#amnt {
+    padding:10px;
+    margin-left: 1190px;
+    margin-top: 150px;
+
+}
+
+.prod_table {
+    margin-left: 2000px;
+}
+#addbtn {
+    padding:2px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

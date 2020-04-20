@@ -1,0 +1,126 @@
+<!-- <?php
+session_start();
+include_once("database_conn.php");
+?> -->
+<html>
+<head>
+	<link rel="stylesheet" href="projectwork1.css">
+	<link rel='stylesheet' href='account.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		function changeTab(val) {
+			$(".tab-content").css('display', 'none');
+			$("#" + val + "-tab").css('display', 'block');
+
+			$(".ac-tab").removeClass("ac-selected");
+			$("#" + val + "-tab-tabbed").addClass('ac-selected')
+			$("#email_" + val).focus()
+		}
+	</script>
+</head>
+
+<div class="ac-container">
+	<div class='flex'>
+		<div id='register-tab-tabbed' class='ac-tab' onclick="changeTab('register');">
+			Register
+		</div>
+		<div id='login-tab-tabbed' class='ac-tab ac-selected' onclick="changeTab('login');">
+			Login
+		</div>
+	</div>
+	<div class='tab-content' id='login-tab'>
+		<form method="post">
+			<div class='center-container'>
+<!-- 				<?php
+				if (isset($_POST['email']) && isset($_POST['password'])) {
+				$email = filter_input(INPUT_POST, 'email');
+				$password = filter_input (INPUT_POST, 'password');
+				$f = mysqli_query($conn, "SELECT * FROM `users` WHERE email='$email' AND password='$password'");
+				if (mysqli_num_rows($f) > 0) {
+					echo "You have successfully logged in";
+				} else {
+					echo "Invalid username/password";
+				}
+				}
+				?> -->
+					<label class='input-label'>Email:</label><input type="text" class='input-text' name="email" placeholder="Email Address" autocomplete="" id='email_login'>
+					<label class='input-label'>Password:</label><input type="password" id="password" class='input-text' name="password" placeholder="Password">
+					<input type="checkbox">
+					<label for="checkbox">
+						Remember me
+					</label>
+					<input type="submit" class='input-submit' value="Login">
+					<a href='' class='ac-link link-med'>Forgot password?</a>
+			</div>
+		</form>
+	</div>
+	<div class='tab-content' id='register-tab'>
+		<form method="post">
+			<div class='center-container'>
+<!-- 
+				<?php
+				error_reporting(0);
+				$email = $_POST['email'];
+				$firstname = $_POST['firstname'];
+				$lastname = $_POST['lastname'];
+				$password = $_POST['password'];
+				$day = $_POST['day'];
+				$month = $_POST['month'];
+				$year = $_POST['year'];
+
+				if (!empty($email) || !empty($firstname) || !empty($lastname) || !empty($password) || !empty($day) || !empty($month) || !empty($year)) {
+					$host = "localhost";
+					$dbusername = "root";
+					$dbpassword = "";
+					$dbname = "accounts";
+					$conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
+
+					if (mysqli_connect_error()) {
+						die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
+					} else {
+						$SELECT = "SELECT email From users Where email = ? Limit 1";
+						$INSERT = "INSERT Into users (email, firstname, lastname, password, day, month, year) values(?, ?, ?, ?, ?, ? ,?)";
+
+						$stmt = $conn->prepare($SELECT);
+						$stmt->bind_param("s", $email);
+						$stmt->execute();
+						$stmt->bind_result($email);
+						$stmt->store_result();
+						$rnum = $stmt->num_rows;
+
+						if ($rnum==0) {
+							$stmt->close();
+
+							$stmt = $conn->prepare($INSERT);
+							$stmt->bind_param("ssssiii", $email, $firstname, $lastname, $password, $day, $month, $year);
+							$stmt->execute();
+							echo "New account registered";
+
+						} else {
+							echo "Invalid details";
+
+						}
+						$stmt->close();
+						$conn->close();
+
+					}
+
+				} else {
+					echo "All fields are required";
+					die();
+
+				}
+					
+				?> -->
+				<label class='input-label'>Email:</label><input type="text" class='input-text' name="email" placeholder="Email Address" id="email_register">
+				<label class='input-label'>Full Name:</label><input type="text" class='input-text' name="full_name" placeholder="Full Name">
+				<label class='input-label'>Username:</label><input type="text" class='input-text' name="username" placeholder="Username">
+				<label class='input-label'>Password:</label><input type="password" id="password" class='input-text' name="password" placeholder="Password">
+
+				<input type="submit" class='input-submit' value="Register">
+			</div>
+		</form>
+	</div>
+</div>
+</body> 
+</html>
